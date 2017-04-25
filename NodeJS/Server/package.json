@@ -1,0 +1,11 @@
+{
+  "name": "smartchair",
+  "version": "1.0.0",
+  "description": "Smart chair part 4 final year project by Nipoon and Suhan",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nipoon and Suhan",
+  "license": "ISC"
+}
