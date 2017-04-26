@@ -3,6 +3,7 @@
  */
 var http = require("http");
 var fs = require("fs");
+var bodyParser = require('body-parser')
 
 var express = require('express');
 var app = express();
@@ -11,10 +12,19 @@ app.use(express.static('public'));
 var configJSON;
 var logger;
 
+// parse application/json
+app.use(bodyParser.json())
+
 
 app.post('/sensorReadings', function (request,response) {
+
+	//logger.info(request.body) // populated!
+	var inStr = request.body;
+	logger.info(inStr);
+
     logger.info("/sensorReadings POST was called");
-    response.send("/sensorReadings POST was called");
+    //response.send("/sensorReadings POST was called");
+    response.send(request.body);
 });
 
 app.get('/sensorReadings', function (request,response) {

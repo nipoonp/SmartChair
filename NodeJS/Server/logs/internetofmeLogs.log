@@ -18,3 +18,83 @@
   host: { name: 'http://BLRKEC149183L:20223' },
   author: { intern: 'Nipoon Patel' } }
 [2017-04-26 11:47:23.574] [INFO] IOMeLogger - /sensorReadings GET was called
+[2017-04-27 01:18:46.255] [INFO] IOMeLogger - Server running...
+[2017-04-27 01:18:46.275] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'internetofme',
+     collectionName: 'buyTest',
+     category: 'art' },
+  report: { category: 'beauty' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-04-27 01:26:28.432] [INFO] IOMeLogger - Server running...
+[2017-04-27 01:26:28.448] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'internetofme',
+     collectionName: 'buyTest',
+     category: 'art' },
+  report: { category: 'beauty' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-04-27 01:36:23.090] [INFO] IOMeLogger - Server running...
+[2017-04-27 01:36:23.106] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'internetofme',
+     collectionName: 'buyTest',
+     category: 'art' },
+  report: { category: 'beauty' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-04-27 01:36:28.860] [INFO] IOMeLogger - { name: 'nipoon' }
+[2017-04-27 01:36:28.862] [INFO] IOMeLogger - /sensorReadings POST was called
+[2017-04-27 01:38:20.117] [INFO] IOMeLogger - Server running...
+[2017-04-27 01:38:20.133] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'internetofme',
+     collectionName: 'buyTest',
+     category: 'art' },
+  report: { category: 'beauty' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-04-27 01:38:25.635] [INFO] IOMeLogger - { name: 'nipoon' }
+[2017-04-27 01:38:25.637] [INFO] IOMeLogger - /sensorReadings POST was called

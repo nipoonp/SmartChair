@@ -2,6 +2,7 @@
   "name": "smartchair",
   "version": "1.0.0",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.14.0",
     "log4js": "^1.1.0",
     "mkdirp": "^0.5.1",
