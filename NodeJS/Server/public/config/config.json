@@ -6,13 +6,8 @@
 
   "database": {
     "mongodbURL": "mongodb://localhost:27017/",
-    "databaseName": "internetofme",
-    "collectionName": "buyTest",
-    "category": "art"
-  },
-
-  "report": {
-    "category": "beauty"
+    "databaseName": "smart_chair",
+    "collectionName": "sensor_readings"
   },
 
   "API": {
