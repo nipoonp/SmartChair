@@ -98,3 +98,22 @@
   author: { intern: 'Nipoon Patel' } }
 [2017-04-27 01:38:25.635] [INFO] IOMeLogger - { name: 'nipoon' }
 [2017-04-27 01:38:25.637] [INFO] IOMeLogger - /sensorReadings POST was called
+[2017-04-27 02:00:29.087] [INFO] IOMeLogger - Server running...
+[2017-04-27 02:00:29.102] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'internetofme',
+     collectionName: 'buyTest',
+     category: 'art' },
+  report: { category: 'beauty' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }

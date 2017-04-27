@@ -15,21 +15,38 @@ var logger;
 // parse application/json
 app.use(bodyParser.json())
 
+var inJSON;
 
-app.post('/sensorReadings', function (request,response) {
+app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4', function (request,response) {
+    var data = request.params;
+    var s0 = data.s0;
+    var s1 = data.s1;
+    var s2 = data.s2;
+    var s3 = data.s3;
+    var s4 = data.s4;
 
-	//logger.info(request.body) // populated!
-	var inStr = request.body;
-	logger.info(inStr);
+
+	inJSON = { "s0" : s0, "s1" : s1, "s2" : s2, "s3" : s3, "s4" : s4}
+
+
+
+
+
+
+
+
+
+
+
+
 
     logger.info("/sensorReadings POST was called");
-    //response.send("/sensorReadings POST was called");
-    response.send(request.body);
+    response.send("/sensorReadings POST was called");
 });
 
 app.get('/sensorReadings', function (request,response) {
     logger.info("/sensorReadings GET was called");
-    response.send("/sensorReadings GET was called");
+    response.send(inJSON);
 });
 
 app.listen(8099, function () {
