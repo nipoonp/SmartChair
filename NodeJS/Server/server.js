@@ -49,7 +49,7 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4', function (request,response) {
             var collection = db.collection(configJSON.database.collectionName);
 
             // Insert some users
-            collection.insert([JSON.parse(inJSON)], function (err, result) {
+            collection.insert(inJSON, function (err, result) {
                 if (err) {
                     logger.error(err);
                 } else {
