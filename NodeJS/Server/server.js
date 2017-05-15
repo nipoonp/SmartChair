@@ -28,7 +28,10 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4', function (request,response) {
     var s3 = data.s3;
     var s4 = data.s4;
 
-	inJSON = {"s0" : s0, "s1" : s1, "s2" : s2, "s3" : s3, "s4" : s4};
+
+    var timeStamp = (new Date).getTime();
+
+	inJSON = {"s0" : s0, "s1" : s1, "s2" : s2, "s3" : s3, "s4" : s4, "time" : timeStamp};
 
 
     //We need to work with "MongoClient" interface in order to connect to a mongodb server.
