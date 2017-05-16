@@ -64,14 +64,6 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4', function (request,response) {
         }
     });
 
-
-
-
-
-
-
-
-
     logger.info("/sensorReadings POST was called");
     response.send("/sensorReadings POST was called");
 });
@@ -81,6 +73,111 @@ app.get('/sensorReadings', function (request,response) {
     //response.setHeader('Content-Type', 'application/json');
     response.json(inJSON);
 });
+
+
+app.get('/getReportStats',function (request,response) {
+
+    logger.info("/getReportStats GET was called");
+    var subscription;
+    var outputStr = "";
+    var MongoClient = require('mongodb').MongoClient;
+
+    // Connect to the db
+    MongoClient.connect(configJSON.database.mongodbURL + configJSON.database.databaseName, function (err, db) {
+
+        db.collection(configJSON.database.collectionName, function (err, collection) {
+
+            
+
+            collection.find({
+                "posture": "unoccupied"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "legs raised"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "sitting forward"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "leaning forward"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "lightly forward"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "leaning backwards"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "leaning left"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "leaning right"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "left crossed"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "good posture"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString() + ",";
+            });
+
+            collection.find({
+                "posture": "perfect posture"
+            }).toArray(function(err, items) {
+                if(err) throw err;
+                outputStr = outputStr + (items.length).toString();
+        logger.info(outputStr);
+        response.send(outputStr);
+            });
+
+
+
+
+        });
+    });
+
+
+});
+
+
 
 app.listen(8099, function () {
 
