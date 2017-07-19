@@ -20,17 +20,37 @@ app.use(bodyParser.json())
 
 inJSON = {"s0" : 0, "s1" : 0, "s2" : 0, "s3" : 0, "s4" : 0};
 
-app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4', function (request,response) {
+app.post('/sensorReadings/:s0/:s1/:s2/:s3/:userID', function (request,response) {
     var data = request.params;
     var s0 = data.s0;
     var s1 = data.s1;
     var s2 = data.s2;
     var s3 = data.s3;
-    var s4 = data.s4;
+    var userID = data.userID;
 
 
-    var timeStamp = (new Date).getTime();
+    var timeStamp = (new Date).getTime()/1000;
 
+	var mysql = require('mysql');
+
+	var con = mysql.createConnection({
+	  host: "localhost",
+	  user: "root",
+	  password: "890xyz",
+	  database: "PostureAlert"
+	});
+
+	con.connect(function(err) {
+	  if (err) throw err;
+	  console.log("Connected!");
+	  var sql = "INSERT INTO NewSensorReadingsTest (s0, s1, s2, s3, userID, time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + userID + ", " + timeStamp + ");";
+	  con.query(sql, function (err, result) {
+	    if (err) throw err;
+	    console.log("1 record inserted");
+	  });
+	});
+
+/*
 	inJSON = {"s0" : s0, "s1" : s1, "s2" : s2, "s3" : s3, "s4" : s4, "time" : timeStamp};
 
 
@@ -63,7 +83,7 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4', function (request,response) {
             });
         }
     });
-
+*/
     logger.info("/sensorReadings POST was called");
     response.send("/sensorReadings POST was called");
 });

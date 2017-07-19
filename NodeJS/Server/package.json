@@ -8,6 +8,7 @@
     "mkdirp": "^0.5.1",
     "mongodb": "^2.2.19",
     "mongojs": "^2.4.0",
+    "mysql": "^2.13.0",
     "path": "^0.12.7"
   },
   "description": "Smart chair part 4 final year project by Nipoon and Suhan",
