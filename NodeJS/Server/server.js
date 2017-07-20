@@ -26,6 +26,10 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
     var s1 = data.s1;
     var s2 = data.s2;
     var s3 = data.s3;
+    var s4 = data.s4;
+    var s5 = data.s5;
+    var s6 = data.s6;
+    var s7 = data.s7;
     var chairID = data.chairID;
 
 
