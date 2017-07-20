@@ -23,11 +23,11 @@ inJSON = {"s0" : 0, "s1" : 0, "s2" : 0, "s3" : 0, "s4" : 0};
 app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (request,response) {
     var data = request.params;
     var s0 = data.s0;
-    var s1 = data.s1;
     var s2 = data.s2;
     var s3 = data.s3;
-    var s4 = data.s4;
+    var s1 = data.s1;
     var s5 = data.s5;
+    var s4 = data.s4;
     var s6 = data.s6;
     var s7 = data.s7;
     var chairID = data.chairID;
@@ -40,26 +40,28 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 	var con = mysql.createConnection({
 	  host: "localhost",
 	  user: "root",
-	  password: "12345678",
+	  password: "890xyz",
 	  database: "PostureAlert"
 	});
 
 	con.connect(function(err) {
 	  if (err) throw err;
 	  console.log("Connected!");
+	});
 
-	  var sql = "SELECT UserID FROM Chairs WHERE ChairID = " + chairID + ");";
-	  con.query(sql, function (err, result) {
-	    if (err) throw err;
-	    console.log("Got back " + result);
-	    var userID = result;
-	  });
+var userID;
 
-	  var sql = "INSERT INTO NewSensorReadingsTest (S0, S1, S2, S3, S4, S5, S6, S7, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + chairID + ", " + userID + ", " + timeStamp + ");";
-	  con.query(sql, function (err, result) {
-	    if (err) throw err;
-	    console.log("1 record inserted");
-	  });
+	var sql = "SELECT UserID FROM Chairs WHERE ChairID = " + chairID + ";";
+	con.query(sql, function (err, result) {
+	if (err) throw err;
+	// console.log("Got back " + result[0].UserID);
+	userID = result[0].UserID;
+
+		var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
+		con.query(sql, function (err, result) {
+		if (err) throw err;
+		console.log("1 record inserted");
+		});
 	});
 
 /*
