@@ -20,6 +20,22 @@ app.use(bodyParser.json())
 
 inJSON = {"s0" : 0, "s1" : 0, "s2" : 0, "s3" : 0, "s4" : 0};
 
+app.get('/dashBoardPieChart/:userID', function (request,response) {
+	var data = request.params;
+	var userID = data.userID;
+
+
+	response.json({"datapoints" : 100})
+});
+
+app.get('/usserInfo/:userID', function (request,response) {
+	var data = request.params;
+	var userID = data.userID;
+
+
+	response.json({"userInfo" : 100})
+});
+
 app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (request,response) {
     var data = request.params;
     var s0 = data.s0;
@@ -49,7 +65,7 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 	  console.log("Connected!");
 	});
 
-var userID;
+	var userID;
 
 	var sql = "SELECT UserID FROM Chairs WHERE ChairID = " + chairID + ";";
 	con.query(sql, function (err, result) {
@@ -60,9 +76,9 @@ var userID;
 		var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
 		con.query(sql, function (err, result) {
 		if (err) throw err;
-		console.log("1 record inserted");
+		console.log("New record inserted");
 		});
-	});
+	});	
 
 /*
 	inJSON = {"s0" : s0, "s1" : s1, "s2" : s2, "s3" : s3, "s4" : s4, "time" : timeStamp};
