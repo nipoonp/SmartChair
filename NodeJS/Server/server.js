@@ -24,7 +24,7 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 	var data = request.params;
 	var userID = data.userID;
 
-	response.json({"datapoints" : 100})
+	response.json({"E" : 0,"LU" : 1,"SF" : 2,"LF" : 3,"SS" : 4,"SB" : 5,"LL" : 6,"LR" : 7,"LC" : 8,"RC" : 9,"NA" : 10,"PP" : 11,})
 });
 
 app.get('/usserInfo/:userID', function (request,response) {
