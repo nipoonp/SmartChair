@@ -31,8 +31,7 @@ app.get('/usserInfo/:userID', function (request,response) {
 	var data = request.params;
 	var userID = data.userID;
 
-
-	response.json({"E" : 0,"LU" : 1,"SF" : 2,"LF" : 3,"SS" : 4,"SB" : 5,"LL" : 6,"LR" : 7,"LC" : 8,"RC" : 9,"NA" : 10,"PP" : 11,})
+	response.json({"firstName" : "Nipoon","lastName" : "Patel","userID" : 1024, "chairID" : 2010})
 });
 
 app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (request,response) {
