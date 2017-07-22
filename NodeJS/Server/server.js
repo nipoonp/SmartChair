@@ -18,7 +18,7 @@ var logger;
 // parse application/json
 app.use(bodyParser.json())
 
-inJSON = {"s0" : 0, "s1" : 0, "s2" : 0, "s3" : 0, "s4" : 0};
+inJSON = {"s0" : 0, "s1" : 0, "s2" : 0, "s3" : 0, "s4" : 0, "s5" : 0, "s6" : 0, "s7" : 0};
 
 app.get('/dashBoardPieChart/:userID', function (request,response) {
 	var data = request.params;
@@ -56,7 +56,7 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 	var con = mysql.createConnection({
 	  host: "localhost",
 	  user: "root",
-	  password: "890xyz",
+	  password: "12345678",
 	  database: "PostureAlert"
 	});
 
@@ -229,7 +229,7 @@ app.get('/getReportStats',function (request,response) {
 
 
 
-app.listen(8099, function () {
+app.listen(8098, function () {
 
 
     var path = require('path');
