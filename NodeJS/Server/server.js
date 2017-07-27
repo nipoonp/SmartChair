@@ -113,7 +113,7 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
         }
     });
 */
-    logger.info(s0 + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 "/sensorReadings POST was called");
+    logger.info(s0 + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 + " /sensorReadings POST was called");
     response.send("/sensorReadings POST was called");
 });
 
