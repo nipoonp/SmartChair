@@ -46,7 +46,6 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
     var s7 = data.s7;
     var chairID = data.chairID;
 
-print(s0 + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7);
 
  //    var timeStamp = (new Date).getTime()/1000;
 
@@ -114,7 +113,7 @@ print(s0 + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " "
         }
     });
 */
-    logger.info("/sensorReadings POST was called");
+    logger.info(s0 + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 "/sensorReadings POST was called");
     response.send("/sensorReadings POST was called");
 });
 
