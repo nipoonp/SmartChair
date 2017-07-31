@@ -47,36 +47,36 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
     var chairID = data.chairID;
 
 
- //    var timeStamp = (new Date).getTime()/1000;
+    var timeStamp = (new Date).getTime()/1000;
 
-	// var mysql = require('mysql');
+	var mysql = require('mysql');
 
-	// var con = mysql.createConnection({
-	//   host: "localhost",
-	//   user: "root",
-	//   password: "12345678",
-	//   database: "PostureAlert"
-	// });
+	var con = mysql.createConnection({
+	  host: "localhost",
+	  user: "root",
+	  password: "12345678",
+	  database: "PostureAlert"
+	});
 
-	// con.connect(function(err) {
-	//   if (err) throw err;
-	//   console.log("Connected!");
-	// });
+	con.connect(function(err) {
+	  if (err) throw err;
+	  console.log("Connected!");
+	});
 
-	// var userID;
+	var userID;
 
-	// var sql = "SELECT UserID FROM Chairs WHERE ChairID = " + chairID + ";";
-	// con.query(sql, function (err, result) {
-	// if (err) throw err;
-	// // console.log("Got back " + result[0].UserID);
-	// userID = result[0].UserID;
+	var sql = "SELECT UserID FROM Chairs WHERE ChairID = " + chairID + ";";
+	con.query(sql, function (err, result) {
+	if (err) throw err;
+	// console.log("Got back " + result[0].UserID);
+	userID = result[0].UserID;
 
-	// 	var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + "NULL" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
-	// 	con.query(sql, function (err, result) {
-	// 	if (err) throw err;
-	// 	console.log("New record inserted");
-	// 	});
-	// });	
+		var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + "1" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
+		con.query(sql, function (err, result) {
+		if (err) throw err;
+		console.log("New record inserted");
+		});
+	});	
 
 
 /*
