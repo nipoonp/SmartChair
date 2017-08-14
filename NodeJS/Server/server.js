@@ -31,8 +31,7 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
       host: "localhost",
       user: "root",
       password: "12345678",
-      database: "PostureAlert
-      "
+      database: "PostureAlert"
     });
 
     con.connect(function(err) {
@@ -92,8 +91,7 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 	  host: "localhost",
 	  user: "root",
 	  password: "12345678",
-	  database: "PostureAlert
-	  "
+	  database: "PostureAlert"
 	});
 
 	con.connect(function(err) {
