@@ -24,6 +24,43 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 	var data = request.params;
 	var userID = data.userID;
 
+
+
+
+    var con = mysql.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "12345678",
+      database: "PostureAlert
+      "
+    });
+
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected!");
+    });
+
+    var userID;
+
+    var sql = "SELECT Posture FROM SensorReadings WHERE UserID = " + userID + ";";
+    con.query(sql, function (err, result) {
+    if (err) throw err;
+    // console.log("Got back " + result[0].UserID);
+    // userID = result[0].UserID;
+    console.log(result)
+
+        // var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + "NULL" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
+        // con.query(sql, function (err, result) {
+        // if (err) throw err;
+        // console.log("New record inserted");
+        // });
+    }); 
+
+    con.end();
+
+
+
+
 	response.json({"E" : 0,"LU" : 1,"SF" : 2,"LF" : 3,"SS" : 4,"SB" : 5,"LL" : 6,"LR" : 7,"LC" : 8,"RC" : 9,"NA" : 10,"PP" : 11,})
 });
 
@@ -55,7 +92,8 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 	  host: "localhost",
 	  user: "root",
 	  password: "12345678",
-	  database: "PostureAlert"
+	  database: "PostureAlert
+	  "
 	});
 
 	con.connect(function(err) {
@@ -77,6 +115,8 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 		console.log("New record inserted");
 		});
 	});	
+
+    con.end();
 
 
 /*
