@@ -41,7 +41,7 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 
     var userID;
 
-    var sql = "SELECT Posture FROM SensorReadings WHERE UserID = " + userID + ";";
+    var sql = "SELECT Posture FROM SensorReadings WHERE UserID = " + userID + " AND Posture IS NOT NULL;";
     con.query(sql, function (err, result) {
     if (err) throw err;
     // console.log("Got back " + result[0].UserID);
