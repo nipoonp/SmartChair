@@ -40,14 +40,14 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
     });
 
     var userID;
-
+    var pos_array = [0,0,0,0,0,0,0,0,0,0,0,0];
     var sql = "SELECT Posture FROM SensorReadings WHERE UserID = " + userID + " AND Posture IS NOT NULL;";
     con.query(sql, function (err, result) {
     if (err) throw err;
 
-        var pos_array = [0,0,0,0,0,0,0,0,0,0,0,0];
+        
 
-        for (i = 0; i < result.size; i++){
+        for (i = 0; i < result.length; i++){
             switch(result[i]) {
                 case 0:
                     pos_array[0] = pos_array[0] + 1;
@@ -89,6 +89,8 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
                     // code block
             }
         }
+        
+response.json({"E" : pos_array[0],"LU" : pos_array[1],"SF" : pos_array[2],"LF" : pos_array[3],"SS" : pos_array[4],"SB" : pos_array[5],"LL" : pos_array[6],"LR" : pos_array[7],"LC" : pos_array[8],"RC" : pos_array[9],"NA" : pos_array[10],"PP" : pos_array[11]})
 
 
     }); 
@@ -98,8 +100,7 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 
 
 
-	response.json({"E" : pos_array[0],"LU" : pos_array[1],"SF" : pos_array[2],"LF" : pos_array[3],"SS" : pos_array[4],"SB" : pos_array[5],"LL" : pos_array[6],"LR" : pos_array[7],"LC" : pos_array[8],"RC" : pos_array[9],"NA" : pos_array[10],"PP" : pos_array[11]})
-});
+	});
 
 app.get('/userInfo/:userID', function (request,response) {
 	var data = request.params;
