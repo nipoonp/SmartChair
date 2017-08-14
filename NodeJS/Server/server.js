@@ -8,7 +8,7 @@ var bodyParser = require('body-parser')
 var express = require('express');
 var app = express();
 app.use(express.static('public'));
-
+var mysql = require('mysql');
 //lets require/import the mongodb native drivers.
 var mongodb = require('mongodb');
 
@@ -84,8 +84,6 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 
 
     var timeStamp = (new Date).getTime()/1000;
-
-	var mysql = require('mysql');
 
 	var con = mysql.createConnection({
 	  host: "localhost",
