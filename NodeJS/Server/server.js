@@ -24,7 +24,7 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 	var data = request.params;
 	var userID = data.userID;
 
-
+var lock = 0;
 
 
     var con = mysql.createConnection({
@@ -89,18 +89,21 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
                     // code block
             }
         }
-        
-response.json({"E" : pos_array[0],"LU" : pos_array[1],"SF" : pos_array[2],"LF" : pos_array[3],"SS" : pos_array[4],"SB" : pos_array[5],"LL" : pos_array[6],"LR" : pos_array[7],"LC" : pos_array[8],"RC" : pos_array[9],"NA" : pos_array[10],"PP" : pos_array[11]})
+
+        lock = 1;
 
 
     }); 
 
     con.end();
 
+while (lock == 0){
+    
+}
 
 
-
-	});
+	response.json({"E" : pos_array[0],"LU" : pos_array[1],"SF" : pos_array[2],"LF" : pos_array[3],"SS" : pos_array[4],"SB" : pos_array[5],"LL" : pos_array[6],"LR" : pos_array[7],"LC" : pos_array[8],"RC" : pos_array[9],"NA" : pos_array[10],"PP" : pos_array[11]})
+});
 
 app.get('/userInfo/:userID', function (request,response) {
 	var data = request.params;
