@@ -46,7 +46,7 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
     if (err) throw err;
     // console.log("Got back " + result[0].UserID);
     // userID = result[0].UserID;
-    console.log(result)
+    console.log(result.Posture)
 
         // var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + "NULL" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
         // con.query(sql, function (err, result) {
