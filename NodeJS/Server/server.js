@@ -44,15 +44,53 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
     var sql = "SELECT Posture FROM SensorReadings WHERE UserID = " + userID + " AND Posture IS NOT NULL;";
     con.query(sql, function (err, result) {
     if (err) throw err;
-    // console.log("Got back " + result[0].UserID);
-    // userID = result[0].UserID;
-    console.log(result.Posture)
 
-        // var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + "NULL" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
-        // con.query(sql, function (err, result) {
-        // if (err) throw err;
-        // console.log("New record inserted");
-        // });
+        var pos_array = [0,0,0,0,0,0,0,0,0,0,0,0];
+
+        for (i = 0; i < result.size; i++){
+            switch(result[i]) {
+                case 0:
+                    pos_array[0] = pos_array[0] + 1;
+                    break;
+                case 1:
+                    pos_array[1] = pos_array[1] + 1;
+                    break;
+                case 2:
+                    pos_array[2] = pos_array[2] + 1;
+                    break;
+                case 3:
+                    pos_array[3] = pos_array[3] + 1;
+                    break;
+                 case 4:
+                    pos_array[4] = pos_array[4] + 1;
+                    break;
+                case 5:
+                    pos_array[5] = pos_array[5] + 1;
+                    break;
+                case 6:
+                    pos_array[6] = pos_array[6] + 1;
+                    break;
+                case 7:
+                    pos_array[7] = pos_array[7] + 1;
+                    break;
+                case 8:
+                    pos_array[8] = pos_array[8] + 1;
+                    break;
+                case 9:
+                    pos_array[9] = pos_array[9] + 1;
+                    break;
+                case 10:
+                    pos_array[10] = pos_array[10] + 1;
+                    break;
+                case 11:
+                    pos_array[11] = pos_array[11] + 1;
+                    break;                  
+                default:
+                    // code block
+            }
+        }
+
+
     }); 
 
     con.end();
@@ -60,7 +98,7 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 
 
 
-	response.json({"E" : 0,"LU" : 1,"SF" : 2,"LF" : 3,"SS" : 4,"SB" : 5,"LL" : 6,"LR" : 7,"LC" : 8,"RC" : 9,"NA" : 10,"PP" : 11,})
+	response.json({"E" : pos_array[0],"LU" : pos_array[1],"SF" : pos_array[2],"LF" : pos_array[3],"SS" : pos_array[4],"SB" : pos_array[5],"LL" : pos_array[6],"LR" : pos_array[7],"LC" : pos_array[8],"RC" : pos_array[9],"NA" : pos_array[10],"PP" : pos_array[11]})
 });
 
 app.get('/userInfo/:userID', function (request,response) {
