@@ -108,6 +108,61 @@ app.get('/userInfo/:userID', function (request,response) {
 	response.json({"firstName" : "Nipoon","lastName" : "Patel","userID" : 1024, "chairID" : 2010})
 });
 
+app.post('/registerUser/:fname/:lname/:email/:weight/:height/:password', function(request,response){
+
+	var data = request.params;
+
+	var fname = data.fname;
+	var lname = data.lname;
+	var email = data.email;
+	var weight = data.weight;
+	var height = data.height;
+	var password = data.password;
+	var id = Math.floor(Math.random() * 10000000) + 1
+
+	var sql = "INSERT INTO Users (FirstName, LastName, UserID, Email, Weight, Height, Password) VALUES (" + "'" + fname + "'" + ", " + "'" + lname + "'" + ", " + "'" + id + "'" + "," + "'" + email + "'" + "," + "'" + weight + "'" + "," + "'" + height + "'" + "," + "'" + password + "'" + ");";
+
+	var con = mysql.createConnection({
+	  host: "13.55.201.70",
+	  user: "root",
+	  password: "12345678",
+	  database: "PostureAlert"
+	});
+
+	con.connect(function(err) {
+	  if (err) throw err;
+	  console.log("Connected!");
+	});
+
+
+	con.query(sql, function (err, result) {
+	if (err) console.log("user already exists");
+	console.log("added");
+	});	
+
+	response.send("/UserInfo Obtained : " + fname + lname + email + weight + height + password);
+
+});
+
+
+
+
+app.post('/trainData/:userID/:posture/:time', function (request,response) {
+    var data = request.params;
+    var userID = data.userID;
+    var posture = data.posture;
+    var time = data.time;
+
+    response.json({"status" : "success"})
+});
+
+
+
+
+
+
+
+
 app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (request,response) {
     var data = request.params;
     var s0 = data.s0;
