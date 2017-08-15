@@ -153,6 +153,7 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
     var posture = data.posture;
     var time = data.time;
 
+    logger.info("/trainData was called")
     response.json({"status" : "success"})
 });
 
