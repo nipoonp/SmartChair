@@ -24,31 +24,31 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 	var data = request.params;
 	var userID = data.userID;
 
-var lock = 0;
 
+    var userID;
+    var pos_array = [0,0,0,0,0,0,0,0,0,0,0,0];
+    var sql = "SELECT Posture FROM SensorReadings WHERE UserID = " + userID + " AND Posture IS NOT NULL;";
 
     var con = mysql.createConnection({
-      host: "localhost",
+      host: "13.55.201.70",
       user: "root",
       password: "12345678",
       database: "PostureAlert"
     });
+
 
     con.connect(function(err) {
       if (err) throw err;
       console.log("Connected!");
     });
 
-    var userID;
-    var pos_array = [0,0,0,0,0,0,0,0,0,0,0,0];
-    var sql = "SELECT Posture FROM SensorReadings WHERE UserID = " + userID + " AND Posture IS NOT NULL;";
+
     con.query(sql, function (err, result) {
     if (err) throw err;
-
-        
-
+    
         for (i = 0; i < result.length; i++){
-            switch(result[i]) {
+        	
+            switch(result[i].Posture) {
                 case 0:
                     pos_array[0] = pos_array[0] + 1;
                     break;
@@ -86,23 +86,19 @@ var lock = 0;
                     pos_array[11] = pos_array[11] + 1;
                     break;                  
                 default:
-                    // code block
-            }
+                    //code block
+           }
         }
+    
+    
+	console.log(pos_array);
+	    
+    response.json({"E" : pos_array[0],"LU" : pos_array[1],"SF" : pos_array[2],"LF" : pos_array[3],"SS" : pos_array[4],"SB" : pos_array[5],"LL" : pos_array[6],"LR" : pos_array[7],"LC" : pos_array[8],"RC" : pos_array[9],"NA" : pos_array[10],"PP" : pos_array[11]})
 
-        lock = 1;
-
-
-    }); 
+    });
 
     con.end();
 
-while (lock == 0){
-    
-}
-
-
-	response.json({"E" : pos_array[0],"LU" : pos_array[1],"SF" : pos_array[2],"LF" : pos_array[3],"SS" : pos_array[4],"SB" : pos_array[5],"LL" : pos_array[6],"LR" : pos_array[7],"LC" : pos_array[8],"RC" : pos_array[9],"NA" : pos_array[10],"PP" : pos_array[11]})
 });
 
 app.get('/userInfo/:userID', function (request,response) {
@@ -156,41 +152,6 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 
     con.end();
 
-
-/*
-	inJSON = {"s0" : s0, "s1" : s1, "s2" : s2, "s3" : s3, "s4" : s4, "time" : timeStamp};
-
-
-    //We need to work with "MongoClient" interface in order to connect to a mongodb server.
-    var MongoClient = mongodb.MongoClient;
-
-    // Connection URL. This is where your mongodb server is running.
-    var url = configJSON.database.mongodbURL + configJSON.database.databaseName;
-
-    // Use connect method to connect to the Server
-    MongoClient.connect(url, function (err, db) {
-        if (err) {
-            logger.error('Unable to connect to the mongoDB server. Error:', err);
-        } else {
-            //HURRAY!! We are connected. :)
-            logger.info('Connection established to', url);
-
-            // Get the documents collection
-            var collection = db.collection(configJSON.database.collectionName);
-
-            // Insert some users
-            collection.insert(inJSON, function (err, result) {
-                if (err) {
-                    logger.error(err);
-                } else {
-                    logger.info('Inserted new reading!');
-                }
-                //Close connection
-                db.close();
-            });
-        }
-    });
-*/
     logger.info(s0 + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 + " /sensorReadings POST was called");
     response.send("/sensorReadings POST was called");
 });
@@ -294,9 +255,6 @@ app.get('/getReportStats',function (request,response) {
         logger.info(outputStr);
         response.send(outputStr);
             });
-
-
-
 
         });
     });
