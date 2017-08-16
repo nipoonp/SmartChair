@@ -181,10 +181,10 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
 
 
 
-        var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + ");";
+        var sql = "UPDATE SensorReadings SET Posture = " + posture + " WHERE ReadingID = " + readingID + ";";
         con.query(sql, function (err, result) {
         if (err) throw err;
-        console.log("New record edited");
+        console.log("New record edited!");
         });
 
 
