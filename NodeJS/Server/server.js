@@ -181,26 +181,33 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
     var readingID = result[0].ReadingID;
     console.log(readingID);
 
-    var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " + 
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); " +
-              "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + result[0].S0 + ", " + result[0].S1 + ", " + result[0].S2 + ", " + result[0].S3 + ", " + result[0].S4 + ", " + result[0].S5 + ", " + result[0].S6 + ", " + result[0].S7 + ", " + posture + ", " + userID + ", " + result[0].chairID + ", " + result[0].time + "); ";
-        // var sql = "UPDATE SensorReadings SET Posture = " + posture + " WHERE ReadingID = " + readingID + ";";
-        con.query(sql, function (err, result) {
+    var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES ?"; 
+    var values = [
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+
+    ];
+
+            // var sql = "UPDATE SensorReadings SET Posture = " + posture + " WHERE ReadingID = " + readingID + ";";
+        con.query(sql, [values], function (err, result) {
         if (err) throw err;
         console.log("New records edited!");
+        con.end();
         });
 
 
     }); 
 
-    con.end();
+    
 
 
     logger.info("/userID " + userID + " posture " + posture + " time " + time );
@@ -253,10 +260,11 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 		con.query(sql, function (err, result) {
 		if (err) throw err;
 		console.log("New record inserted");
+        con.end();
 		});
 	});	
 
-    con.end();
+    
 
     logger.info(s0 + " " + s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 + " /sensorReadings POST was called");
     response.send("/sensorReadings POST was called");
