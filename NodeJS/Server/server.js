@@ -194,6 +194,17 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
         [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
         [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
         [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
 
     ];
 
