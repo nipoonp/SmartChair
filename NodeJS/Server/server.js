@@ -136,11 +136,16 @@ app.post('/registerUser/:fname/:lname/:email/:weight/:height/:password', functio
 
 
 	con.query(sql, function (err, result) {
-	if (err) console.log("user already exists");
-	console.log("added");
+		if (err){
+			response.send({"status":"0"});
+		} else{
+			response.send({"status":"1"});
+		}
+	
 	});	
 
-	response.send("/UserInfo Obtained : " + fname + lname + email + weight + height + password);
+	
+	
 
 });
 
@@ -153,7 +158,38 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
     var posture = data.posture;
     var time = data.time;
 
-    logger.info("/trainData was called")
+
+    var con = mysql.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "12345678",
+      database: "PostureAlert"
+    });
+
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected!");
+    });
+
+    var userID;
+
+    var sql = "SELECT UserID FROM Chairs WHERE ChairID = " + chairID + ";";
+    con.query(sql, function (err, result) {
+    if (err) throw err;
+    // console.log("Got back " + result[0].UserID);
+    userID = result[0].UserID;
+
+        var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + "NULL" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
+        con.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log("New record inserted");
+        });
+    }); 
+
+    con.end();
+
+
+    logger.info("/userID " + userID + " posture " + posture + " time " + time );
     response.json({"status" : "success"})
 });
 
