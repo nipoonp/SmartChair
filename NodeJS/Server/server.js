@@ -108,6 +108,58 @@ app.get('/userInfo/:userID', function (request,response) {
 	response.json({"firstName" : "Nipoon","lastName" : "Patel","userID" : 1024, "chairID" : 2010})
 });
 
+app.post('/loginUser/:email/:password', function(request,response){
+
+	var data = request.params;
+
+	var email = data.email;
+	var password = data.password;
+	var sql = "SELECT FirstName, LastName, UserID, Email, Weight, Height, Password FROM PostureAlert.Users WHERE Email = '" + email + "'" + ";";
+
+
+    var con = mysql.createConnection({
+      host: "13.55.201.70",
+      user: "root",
+      password: "12345678",
+      database: "PostureAlert"
+    });
+
+
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected!");
+    });
+
+
+	con.query(sql, function (err, result) {
+		if (err){
+			throw error;
+
+		} else{
+			
+			try{
+				
+				if(password.localeCompare(result[0].Password) == 0){
+					response.json({"status" : "0","fname":result[0].FirstName,"lname":result[0].LastName,"id":result[0].UserID,"email":result[0].Email,"weight":result[0].Weight,"password":result[0].Password});	// All good
+				} else{
+					response.json({"status" : "1"}); //User exists, but enters incorrect password
+				}
+
+			}
+			catch(err){
+				console.log(err);
+				response.json({"status" : "2"}); //Email doesnt exist, user needs to register
+
+			}
+
+		}
+
+	});	
+
+});
+
+
+
 app.post('/registerUser/:fname/:lname/:email/:weight/:height/:password', function(request,response){
 
 	var data = request.params;
@@ -137,7 +189,7 @@ app.post('/registerUser/:fname/:lname/:email/:weight/:height/:password', functio
 
 	con.query(sql, function (err, result) {
 		if (err){
-			response.send({"status":"0"});
+			response.send({"status":"0"}); //query not possible if user already exists
 			console.log("Status 0");
 		} else{
 			response.send({"status":"1"});
