@@ -101,6 +101,52 @@ app.get('/dashBoardPieChart/:userID', function (request,response) {
 
 });
 
+
+
+app.get('/dashBoardLineChart/:userID', function (request,response) {
+	var data = request.params;
+	var userID = data.userID;
+
+	var sql = "SELECT Posture,Time FROM SensorReadings WHERE userID = " + userID + " AND posture IS NOT NULL ORDER BY TIME DESC LIMIT 100;";
+
+    var con = mysql.createConnection({
+      host: "13.55.201.70",
+      user: "root",
+      password: "12345678",
+      database: "PostureAlert"
+    });
+
+
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected!");
+    });
+
+
+    con.query(sql, function (err, result) {
+    if (err) throw err;
+    	var posture_values = [result.length];
+    	var time_values = [result.length];
+
+    		for (i = 0; i < result.length; i++){
+
+    			posture_values[i] = result[i].Posture
+				time_values[i] = result[i].Time
+
+    		}
+
+    		console.log(posture_values);
+    		console.log(time_values);
+
+    response.json({"posture_values": posture_values, "time_values": time_values})
+
+    });
+
+    con.end();
+
+});
+
+
 app.get('/userInfo/:userID', function (request,response) {
 	var data = request.params;
 	var userID = data.userID;
@@ -232,28 +278,28 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
 
     var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES ?"; 
     var values = [
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
-        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
+        [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,posture,userID,result[0].ChairID,result[0].Time],
 
     ];
 
@@ -308,8 +354,8 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 	  console.log("Connected!");
 	});
 
-	var userID;
-
+	var userID
+;
 	var sql = "SELECT UserID FROM Chairs WHERE ChairID = " + chairID + ";";
 	con.query(sql, function (err, result) {
 	if (err) throw err;
