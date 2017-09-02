@@ -194,6 +194,44 @@ app.get('/userInfo/:userID', function (request,response) {
 	response.json({"firstName" : "Nipoon","lastName" : "Patel","userID" : 1024, "chairID" : 2010})
 });
 
+app.get('/getNotifications/:id', function (request,response){
+
+	var data  = request.params;
+	var posture = "(none)";
+	var id = data.id;
+	var sql = "select Posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
+
+	var con = mysql.createConnection({
+      host: "13.55.201.70",
+      user: "root",
+      password: "12345678",
+      database: "PostureAlert"
+    });
+
+
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected!");
+    });	
+
+    
+    con.query(sql, function (err, result) {
+		if (err){
+			throw err;
+		} else{
+			posture = result[0].Posture
+			response.json({"Posture" : posture});
+		}
+	
+	});
+
+    
+
+
+
+
+});
+
 app.post('/loginUser/:email/:password', function(request,response){
 
 	var data = request.params;
