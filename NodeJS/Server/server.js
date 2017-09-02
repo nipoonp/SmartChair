@@ -147,6 +147,46 @@ app.get('/dashBoardLineChart/:userID', function (request,response) {
 });
 
 
+app.get('/dashBoardPosturePercentageChart/:userID', function (request,response) {
+    var data = request.params;
+    var userID = data.userID;
+
+    var sql = "SELECT Posture FROM SensorReadings WHERE userID = " + userID + " AND posture=10 OR posture=11;";
+
+    var con = mysql.createConnection({
+      host: "13.55.201.70",
+      user: "root",
+      password: "12345678",
+      database: "PostureAlert"
+    });
+
+
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected!");
+    });
+
+
+    con.query(sql, function (err, result) {
+        if (err) throw err;
+        var good_pos_cont = result.length;
+
+        console.log(result.length);
+
+        sql = "SELECT Posture FROM SensorReadings WHERE userID = " + userID + " AND posture!=10 OR posture!=11;";
+        con.query(sql, function (err, result) {
+
+            if (err) throw err;
+            var bad_pos_cont = result.length;
+
+            console.log(result.length);
+
+            response.json({"good_pos_cont": good_pos_cont, "bad_pos_cont": bad_pos_cont});
+            con.end();
+        });
+    });
+});
+
 app.get('/userInfo/:userID', function (request,response) {
 	var data = request.params;
 	var userID = data.userID;
