@@ -199,7 +199,19 @@ app.get('/getNotifications/:id', function (request,response){
 	var data  = request.params;
 	var posture = "(none)";
 	var id = data.id;
-	var sql = "select Posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
+	// var sql = "select Posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
+
+    var start = new Date();
+    start.setHours(0,0,0,0);
+
+    var startOfDay = start.getTime()/1000;
+
+    var sql = "SELECT COUNT(Posture) AS cnt FROM SensorReadings WHERE UserID = " + id + " AND (Posture = 10 OR Posture = 11) AND Time > " + startOfDay + ";";
+
+// timeStamp = 340958330;
+
+// SELECT COUNT(*) FROM SensorReadings WHERE USERID = id AND POSTURE = 10 OR POSTURE = 11 AND time > timeSamp; //good pos count
+// SELECT COUNT(*) FROM SensorReadings WHERE USERID = id AND POSTURE != 10 OR POSTURE != 11 AND POSTURe != NULL AND POSTURE != 0; //bad pos count
 
 	var con = mysql.createConnection({
       host: "13.55.201.70",
@@ -219,7 +231,8 @@ app.get('/getNotifications/:id', function (request,response){
 		if (err){
 			throw err;
 		} else{
-			posture = result[0].Posture
+            console.log(result[0].cnt);
+			posture = result[0].cnt;
 			response.json({"Posture" : posture});
 		}
 	
