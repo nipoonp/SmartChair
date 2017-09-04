@@ -197,7 +197,8 @@ app.get('/userInfo/:userID', function (request,response) {
 app.get('/getNotifications/:id', function (request,response){
 
 	var data  = request.params;
-	var posture = "(none)";
+	var good_posture_time;
+    var bad_posture_time;
 	var id = data.id;
 	// var sql = "select Posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
 
@@ -206,7 +207,7 @@ app.get('/getNotifications/:id', function (request,response){
 
     var startOfDay = start.getTime()/1000;
 
-    var sql = "SELECT COUNT(Posture) AS cnt FROM SensorReadings WHERE UserID = " + id + " AND (Posture = 10 OR Posture = 11) AND Time > " + startOfDay + ";";
+    var sql = "SELECT COUNT(Posture) AS good_cnt FROM SensorReadings WHERE UserID = " + id + " AND (Posture = 10 OR Posture = 11) AND Time > " + startOfDay + ";";
 
 // timeStamp = 340958330;
 
@@ -228,13 +229,20 @@ app.get('/getNotifications/:id', function (request,response){
 
     
     con.query(sql, function (err, result) {
-		if (err){
-			throw err;
-		} else{
-            console.log(result[0].cnt);
-			posture = result[0].cnt;
-			response.json({"Posture" : posture});
-		}
+
+        if (err) throw err;
+        good_posture_time = result[0].good_cnt;
+
+        sql = "SELECT COUNT(Posture) AS bad_cnt FROM SensorReadings WHERE UserID = " + id + " AND (Posture != 10 AND Posture != 11 AND Posture != 0 AND Posture IS NOT NULL) AND Time > " + startOfDay + ";";
+        con.query(sql, function (err, result) {
+
+            if (err) throw err;
+            bad_posture_time = result[0].bad_cnt;
+
+            console.log("good_posture_time " + good_posture_time + " bad_posture_time " + bad_posture_time)
+            response.json({"good_posture_time": good_posture_time, "bad_posture_time": bad_posture_time});
+            con.end();
+        });
 	
 	});
 
