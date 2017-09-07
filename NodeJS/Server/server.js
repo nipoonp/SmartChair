@@ -397,7 +397,7 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
             var values = [
                 [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,0,0,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
@@ -405,9 +405,8 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
 
-                [0,0,0,0,0,0,0,1024,1024,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,1024,1024,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,1024,1024,8,userID,result[0].ChairID,result[0].Time], //8
@@ -417,7 +416,7 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
 
                 [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,0,0,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
@@ -425,9 +424,8 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
 
-                [0,0,0,0,0,0,0,1024,1024,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,1024,1024,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,1024,1024,8,userID,result[0].ChairID,result[0].Time], //8
@@ -437,7 +435,7 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
 
                 [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,0,0,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
@@ -445,9 +443,8 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
 
-                [0,0,0,0,0,0,0,1024,1024,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,1024,1024,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,1024,1024,8,userID,result[0].ChairID,result[0].Time], //8
@@ -457,7 +454,7 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
 
                 [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,0,0,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
@@ -465,9 +462,8 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
 
-                [0,0,0,0,0,0,0,1024,1024,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,1024,1024,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,1024,1024,8,userID,result[0].ChairID,result[0].Time], //8
@@ -475,10 +471,9 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
 
 
 
-
                 [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,0,0,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
@@ -486,9 +481,8 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
 
-                [0,0,0,0,0,0,0,1024,1024,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,0,1024,1024,1,userID,result[0].ChairID,result[0].Time], //1
-                [0,0,0,0,700,700,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,0,0,900,900,1024,1024,2,userID,result[0].ChairID,result[0].Time], //2
                 [0,0,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,3,userID,result[0].ChairID,result[0].Time], //3
                 [0,result[0].S1,averages2s3,averages2s3,result[0].S4,result[0].S5,1024,1024,4,userID,result[0].ChairID,result[0].Time], //4
                 [result[0].S0,result[0].S1,averages2s3,averages2s3,0,result[0].S5,1024,1024,8,userID,result[0].ChairID,result[0].Time], //8
