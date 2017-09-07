@@ -291,23 +291,28 @@ app.post('/loginUser/:email/:password', function(request,response){
                          if (err) throw err;
 
                     });
+                    con.end();
                     response.json({"status" : "0","fname":result[0].FirstName,"lname":result[0].LastName,"id":result[0].UserID,"email":result[0].Email,"weight":result[0].Weight,"height":result[0].Height,"password":result[0].Password}); // All good
- 
+ 					
 
                 } else{
+                	con.end();
 					response.json({"status" : "1"}); //User exists, but enters incorrect password
 				}
 
 			}
 			catch(err){
 				console.log(err);
+				con.end();
 				response.json({"status" : "2"}); //Email doesnt exist, user needs to register
 
 			}
 
 		}
 
-	});	
+	});
+
+		
 
 });
 
@@ -349,7 +354,9 @@ app.post('/registerUser/:fname/:lname/:email/:weight/:height/:password', functio
 			console.log("Status 1");
 		}
 	
-	});	
+	});
+
+	con.end();	
 
 });
 
