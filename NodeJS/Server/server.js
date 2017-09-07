@@ -290,10 +290,9 @@ app.post('/loginUser/:email/:password', function(request,response){
                     con.query(sql, function (err, result) {
                          if (err) throw err;
 
-                        response.json({"status" : "0","fname":result[0].FirstName,"lname":result[0].LastName,"id":result[0].UserID,"email":result[0].Email,"weight":result[0].Weight,"height":result[0].Height,"password":result[0].Password}); // All good
-                        con.end();
-
-                    }); 
+                    });
+                    response.json({"status" : "0","fname":result[0].FirstName,"lname":result[0].LastName,"id":result[0].UserID,"email":result[0].Email,"weight":result[0].Weight,"height":result[0].Height,"password":result[0].Password}); // All good
+ 
 
                 } else{
 					response.json({"status" : "1"}); //User exists, but enters incorrect password
