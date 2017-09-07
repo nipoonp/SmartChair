@@ -371,13 +371,53 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
     var sql = "SELECT * FROM SensorReadings WHERE UserID = " + userID + " AND Time <= " + time + " ORDER BY time DESC LIMIT 1;";
     con.query(sql, function (err, result) {
     if (err) throw err;
-    // console.log("Got back " + result[0].UserID);
-    // var readingID = result[0].ReadingID;
-    // console.log(readingID);
+    console.log("Got back " + result[0].UserID);
+    var readingID = result[0].ReadingID;
+    console.log(readingID);
 
         var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES ?"; 
         if (posture == 11){
             var values = [
+                [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
+                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
+                [0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,0,0,0,9,userID,result[0].ChairID,result[0].Time], //9
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
+
+                [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
+                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
+                [0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,0,0,0,9,userID,result[0].ChairID,result[0].Time], //9
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
+
+                [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
+                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
+                [0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,0,0,0,9,userID,result[0].ChairID,result[0].Time], //9
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
+
+                [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
+                [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
+                [0,0,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,3,userID,result[0].ChairID,result[0].Time], //3
+                [0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,4,userID,result[0].ChairID,result[0].Time], //4
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,result[0].S5,0,0,8,userID,result[0].ChairID,result[0].Time], //8
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,0,0,0,9,userID,result[0].ChairID,result[0].Time], //9
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,10,userID,result[0].ChairID,result[0].Time], //10
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,result[0].S6,result[0].S7,11,userID,result[0].ChairID,result[0].Time], //11
+
                 [0,0,0,0,0,0,0,0,0,userID,result[0].ChairID,result[0].Time], //0
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,0,0,0,0,1,userID,result[0].ChairID,result[0].Time], //1
                 [0,0,0,0,700,700,0,0,2,userID,result[0].ChairID,result[0].Time], //2
@@ -403,11 +443,31 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
 
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
+                [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
+
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
+                [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
+
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
+                [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
+
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
+                [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
+
                 // [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
                 // [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
             ];
         } else if (posture == 5){
             var values = [
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,5,userID,result[0].ChairID,result[0].Time], //5
+
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,5,userID,result[0].ChairID,result[0].Time], //5  
+
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,5,userID,result[0].ChairID,result[0].Time], //5
+
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,5,userID,result[0].ChairID,result[0].Time], //5
+
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,5,userID,result[0].ChairID,result[0].Time], //5
 
                 // [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,5,userID,result[0].ChairID,result[0].Time], //5
