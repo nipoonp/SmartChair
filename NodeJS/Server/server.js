@@ -386,9 +386,9 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
     var sql = "SELECT * FROM SensorReadings WHERE UserID = " + userID + " AND Time <= " + time + " ORDER BY time DESC LIMIT 1;";
     con.query(sql, function (err, result) {
     if (err) throw err;
-    console.log("Got back " + result[0].UserID);
-    var readingID = result[0].ReadingID;
-    console.log(readingID);
+    // console.log("Got back " + result[0].UserID);
+    // var readingID = result[0].ReadingID;
+    // console.log(readingID);
 
     var averages2s3 = (result[0].S2 + result[0].S3)/2;
 
