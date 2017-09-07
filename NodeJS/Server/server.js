@@ -501,31 +501,31 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
             var values = [
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
-                result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,1024,1024,7,userID,result[0].ChairID,result[0].Time], //7
 
 
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
-                result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,1024,1024,7,userID,result[0].ChairID,result[0].Time], //7
 
 
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
-                result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,1024,1024,7,userID,result[0].ChairID,result[0].Time], //7
 
 
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
-                result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,1024,1024,7,userID,result[0].ChairID,result[0].Time], //7
 
 
                 [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,0,0,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,0,0,7,userID,result[0].ChairID,result[0].Time], //7
-                result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
+                [result[0].S0,result[0].S1,result[0].S2,result[0].S3,result[0].S4,result[0].S5,1024,1024,6,userID,result[0].ChairID,result[0].Time], //6
                 [0,result[0].S1,result[0].S3,result[0].S2,result[0].S5,result[0].S4,1024,1024,7,userID,result[0].ChairID,result[0].Time], //
             ];
         } else if (posture == 5){
