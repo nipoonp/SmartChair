@@ -285,8 +285,17 @@ app.post('/loginUser/:email/:password', function(request,response){
 			try{
 				
 				if(password.localeCompare(result[0].Password) == 0){
-					response.json({"status" : "0","fname":result[0].FirstName,"lname":result[0].LastName,"id":result[0].UserID,"email":result[0].Email,"weight":result[0].Weight,"height":result[0].Height,"password":result[0].Password});	// All good
-				} else{
+                    sql = "UPDATE Chairs SET UserID = " + result[0].UserID +  " WHERE ChairID = 1000;";
+
+                    con.query(sql, function (err, result) {
+                         if (err) throw err;
+
+                        response.json({"status" : "0","fname":result[0].FirstName,"lname":result[0].LastName,"id":result[0].UserID,"email":result[0].Email,"weight":result[0].Weight,"height":result[0].Height,"password":result[0].Password}); // All good
+                        con.end();
+
+                    }); 
+
+                } else{
 					response.json({"status" : "1"}); //User exists, but enters incorrect password
 				}
 
@@ -510,6 +519,13 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
     var s7 = data.s7;
     var chairID = data.chairID;
 
+    if (s2 < 20){
+        s2 = 0;
+    }
+
+    if (s3 < 20){
+        s3 = 0;
+    }
 
     var timeStamp = (new Date).getTime()/1000;
 
