@@ -372,8 +372,8 @@ app.post('/trainData/:userID/:posture/:time', function (request,response) {
     con.query(sql, function (err, result) {
     if (err) throw err;
     // console.log("Got back " + result[0].UserID);
-    var readingID = result[0].ReadingID;
-    console.log(readingID);
+    // var readingID = result[0].ReadingID;
+    // console.log(readingID);
 
         var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES ?"; 
         if (posture == 11){
@@ -473,7 +473,7 @@ app.post('/sensorReadings/:s0/:s1/:s2/:s3/:s4/:s5/:s6/:s7/:chairID', function (r
 	// console.log("Got back " + result[0].UserID);
 	userID = result[0].UserID;
 
-		var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + "0" + ", " + "0" + ", " + "NULL" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
+		var sql = "INSERT INTO SensorReadings (S0, S1, S2, S3, S4, S5, S6, S7, Posture, UserID, ChairID, Time) VALUES (" + s0 + ", " + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + "NULL" + ", " + userID + ", " + chairID + ", " + timeStamp + ");";
 		con.query(sql, function (err, result) {
 		if (err) throw err;
 		console.log("New record inserted");
