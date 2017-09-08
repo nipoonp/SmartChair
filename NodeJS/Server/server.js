@@ -224,7 +224,7 @@ app.get('/getNotifications/:id', function (request,response){
 
     con.connect(function(err) {
       if (err) throw err;
-      console.log("Connected!");
+      console.log("Connected! - Notifications API");
     });	
 
     
@@ -272,7 +272,7 @@ app.post('/loginUser/:email/:password', function(request,response){
 
     con.connect(function(err) {
       if (err) throw err;
-      console.log("Connected!");
+      console.log("Connected! - Login API");
     });
 
 
@@ -341,7 +341,7 @@ app.post('/registerUser/:fname/:lname/:email/:weight/:height/:password', functio
 
 	con.connect(function(err) {
 	  if (err) throw err;
-	  console.log("Connected!");
+	  console.log("Connected! - Register API");
 	});
 
 
