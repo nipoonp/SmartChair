@@ -220,27 +220,37 @@ app.get('/popup/:id', function (request, response){
 
     con.query(sql, function (err, result) {
 
-        if (err){
-            response.json({"Entries": 0, "Bad_posture": 0});
-        }
+        if (err) throw err;
         
+        try{
         number_of_entries = result[0].Result;
+        	if(number_of_entries == 0){
+        		response.json({"Entries": 0, "Bad_posture": 0});
+        	}
+    	}
+    	catch(err){
+    		response.json({"Entries": 0, "Bad_posture": 0});
+    	}
         
-        
+        if(number_of_entries !=0){
         sql = "select Posture , count(Posture) AS Posture_Count from PostureAlert.SensorReadings where (UserID = '" + id + "' and (Posture = '1' or Posture = '2' or Posture = '3' or Posture = '4' or Posture = '5' or Posture = '6' or Posture = '7' or Posture = '8' or Posture = '9')) group by Posture order by Posture_Count desc limit 1;";
         
         con.query(sql, function (err, result) {
 
-            if (err){
-            	response.json({"Entries": 0, "Bad_posture": 0});
-            } 
+            if (err) throw err;
             
+            try{
             most_common_bad_posture = result[0].Posture;
+        	}
+        	catch(err){
+        		response.json({"Entries": 0, "Bad_posture": 0});
+        	}
 
             response.json({"Entries": number_of_entries, "Bad_posture": most_common_bad_posture});
             
             con.end();
         });
+    	}
 	
 	});
 
