@@ -265,6 +265,7 @@ app.get('/getNotifications/:id', function (request,response){
 	var data  = request.params;
 	var good_posture_time;
     var bad_posture_time;
+    var recent_posture;
 	var id = data.id;
 	// var sql = "select Posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
 
@@ -305,9 +306,20 @@ app.get('/getNotifications/:id', function (request,response){
             if (err) throw err;
             bad_posture_time = result[0].bad_cnt;
 
-            console.log("good_posture_time " + good_posture_time + " bad_posture_time " + bad_posture_time)
-            response.json({"good_posture_time": good_posture_time, "bad_posture_time": bad_posture_time});
-            con.end();
+            sql = "select Posture AS recent_posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
+
+            con.query(sql, function (err, result) {
+
+            	if(err) throw err;
+            	recent_posture = result[0].recent_posture;
+           		console.log("good_posture_time " + good_posture_time + " bad_posture_time " + bad_posture_time + " recent_posture " + recent_posture);
+            	response.json({"good_posture_time": good_posture_time, "bad_posture_time": bad_posture_time, "recent_posture" : recent_posture});
+           		con.end();
+
+
+            });
+
+
         });
 	
 	});
