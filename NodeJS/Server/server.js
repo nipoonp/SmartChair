@@ -220,7 +220,9 @@ app.get('/popup/:id', function (request, response){
 
     con.query(sql, function (err, result) {
 
-        if (err) throw err;
+        if (err){
+            response.json({"Entries": 0, "Bad_posture": 0});
+        }
         
         number_of_entries = result[0].Result;
         
@@ -229,7 +231,9 @@ app.get('/popup/:id', function (request, response){
         
         con.query(sql, function (err, result) {
 
-            if (err) throw err;
+            if (err){
+            	response.json({"Entries": 0, "Bad_posture": 0});
+            } 
             
             most_common_bad_posture = result[0].Posture;
 
