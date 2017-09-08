@@ -299,7 +299,7 @@ app.get('/getNotifications/:id', function (request,response){
 
         if (err) throw err;
         good_posture_time = result[0].good_cnt;
-        
+
 
         sql = "SELECT COUNT(Posture) AS bad_cnt FROM SensorReadings WHERE UserID = " + id + " AND (Posture != 10 AND Posture != 11 AND Posture != 0 AND Posture IS NOT NULL) AND Time > " + startOfDay + ";";
         con.query(sql, function (err, result) {
@@ -312,7 +312,11 @@ app.get('/getNotifications/:id', function (request,response){
             con.query(sql, function (err, result) {
 
             	if(err) throw err;
+            	try{
             	recent_posture = result[0].recent_posture;
+            	} catch (err){
+            		recent_posture = recent_posture;
+            	}
            		console.log("good_posture_time " + good_posture_time + " bad_posture_time " + bad_posture_time + " recent_posture " + recent_posture);
             	response.json({"good_posture_time": good_posture_time, "bad_posture_time": bad_posture_time, "recent_posture" : recent_posture});
            		con.end();
