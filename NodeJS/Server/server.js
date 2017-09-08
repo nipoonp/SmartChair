@@ -194,6 +194,58 @@ app.get('/userInfo/:userID', function (request,response) {
 	response.json({"firstName" : "Nipoon","lastName" : "Patel","userID" : 1024, "chairID" : 2010})
 });
 
+
+// add something if user doesnt exist, but API should not be called for invalid id.
+app.get('/popup/:id', function (request, response){
+
+	var data = request.params;
+	var id = data.id;
+	var number_of_entries = 0;
+	var most_common_bad_posture = 0;
+	var sql = "select count(*) as Result FROM PostureAlert.SensorReadings where UserID ='" + id + "';";
+	
+	var con = mysql.createConnection({
+      host: "13.55.201.70",
+      user: "root",
+      password: "12345678",
+      database: "PostureAlert"
+    });
+
+
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected! - popup API");
+    });	
+
+
+    con.query(sql, function (err, result) {
+
+        if (err) throw err;
+        
+        number_of_entries = result[0].Result;
+        
+        
+        sql = "select Posture , count(Posture) AS Posture_Count from PostureAlert.SensorReadings where (UserID = '" + id + "' and (Posture = '1' or Posture = '2' or Posture = '3' or Posture = '4' or Posture = '5' or Posture = '6' or Posture = '7' or Posture = '8' or Posture = '9')) group by Posture order by Posture_Count desc limit 1;";
+        
+        con.query(sql, function (err, result) {
+
+            if (err) throw err;
+            
+            most_common_bad_posture = result[0].Posture;
+
+            response.json({"Entries": number_of_entries, "Bad_posture": most_common_bad_posture});
+            
+            con.end();
+        });
+	
+	});
+
+});
+
+
+
+
+
 app.get('/getNotifications/:id', function (request,response){
 
 	var data  = request.params;
