@@ -298,39 +298,21 @@ app.get('/getNotifications/:id', function (request,response){
     con.query(sql, function (err, result) {
 
         if (err) throw err;
+        good_posture_time = result[0].good_cnt;
         
-            try{
-            	good_posture_time = result[0].good_cnt;
-        	}
-        	catch(err){
-        		response.json({"good_posture_time": 0, "bad_posture_time": 0, "recent_posture" : 0});
-        	}
 
         sql = "SELECT COUNT(Posture) AS bad_cnt FROM SensorReadings WHERE UserID = " + id + " AND (Posture != 10 AND Posture != 11 AND Posture != 0 AND Posture IS NOT NULL) AND Time > " + startOfDay + ";";
         con.query(sql, function (err, result) {
 
             if (err) throw err;
-           
-            try{
-         		bad_posture_time = result[0].bad_cnt;
-        	}
-        	catch(err){
-        		response.json({"good_posture_time": 0, "bad_posture_time": 0, "recent_posture" : 0});
-        	}
+            bad_posture_time = result[0].bad_cnt;
 
             sql = "select Posture AS recent_posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
+
             con.query(sql, function (err, result) {
 
             	if(err) throw err;
-            	
-
-            	try{
-					recent_posture = result[0].recent_posture;
-				}
-    			catch(err){
-        		response.json({"good_posture_time": 0, "bad_posture_time": 0, "recent_posture" : 0});
-    			}
-
+            	recent_posture = result[0].recent_posture;
            		console.log("good_posture_time " + good_posture_time + " bad_posture_time " + bad_posture_time + " recent_posture " + recent_posture);
             	response.json({"good_posture_time": good_posture_time, "bad_posture_time": bad_posture_time, "recent_posture" : recent_posture});
            		con.end();
