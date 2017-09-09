@@ -307,7 +307,7 @@ app.get('/getNotifications/:id', function (request,response){
             if (err) throw err;
             bad_posture_time = result[0].bad_cnt;
 
-            sql = "select Posture AS recent_posture from PostureAlert.SensorReadings where Posture != 'NULL' and UserID = '" + id + "' order by time desc limit 1;"
+            sql = "select Posture AS recent_posture from PostureAlert.SensorReadings where Posture IS NOT NULL and UserID = '" + id + "' order by time desc limit 1;"
 
             con.query(sql, function (err, result) {
 
