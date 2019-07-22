@@ -1,0 +1,1534 @@
+[2017-08-14 13:54:12.412] [INFO] IOMeLogger - Server running...
+[2017-08-14 13:54:12.431] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-14 14:00:17.927] [INFO] IOMeLogger - Server running...
+[2017-08-14 14:00:17.942] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-14 14:25:24.600] [INFO] IOMeLogger - Server running...
+[2017-08-14 14:25:24.617] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-14 23:39:19.394] [INFO] IOMeLogger - Server running...
+[2017-08-14 23:39:19.436] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 12:52:22.143] [INFO] IOMeLogger - Server running...
+[2017-08-15 12:52:22.147] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 12:56:59.348] [INFO] IOMeLogger - Server running...
+[2017-08-15 12:56:59.351] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 12:57:44.182] [INFO] IOMeLogger - Server running...
+[2017-08-15 12:57:44.186] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:02:05.241] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:02:05.244] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:13:01.332] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:13:01.336] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:35:13.761] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:35:13.777] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:36:52.559] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:36:54.738] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:38:10.973] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:38:10.988] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:38:44.878] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:38:44.897] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:40:08.733] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:40:08.750] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:55:25.263] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:55:25.279] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 13:58:49.880] [INFO] IOMeLogger - Server running...
+[2017-08-15 13:58:49.885] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:06:35.405] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:06:35.408] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:08:09.750] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:08:09.755] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:09:18.752] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:09:18.756] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:10:35.531] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:10:35.534] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:11:26.631] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:11:26.635] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:12:25.726] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:12:25.730] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:14:29.689] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:14:29.693] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:15:01.007] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:15:01.011] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:15:41.912] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:15:41.916] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:16:05.697] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:16:05.701] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:16:34.093] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:16:34.097] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 14:17:32.399] [INFO] IOMeLogger - Server running...
+[2017-08-15 14:17:32.404] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 19:27:51.613] [INFO] IOMeLogger - Server running...
+[2017-08-15 19:27:51.636] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 19:41:05.320] [INFO] IOMeLogger - Server running...
+[2017-08-15 19:41:05.325] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 19:43:18.503] [INFO] IOMeLogger - Server running...
+[2017-08-15 19:43:18.508] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 19:44:53.720] [INFO] IOMeLogger - Server running...
+[2017-08-15 19:44:53.724] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 19:46:57.914] [INFO] IOMeLogger - Server running...
+[2017-08-15 19:46:57.917] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 21:57:22.911] [INFO] IOMeLogger - Server running...
+[2017-08-15 21:57:22.915] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:03:24.274] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:03:24.279] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:07:20.035] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:07:20.040] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:09:48.593] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:09:48.597] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:12:56.210] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:12:56.214] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:18:49.560] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:18:49.564] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:35:07.503] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:35:07.507] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:35:45.137] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:35:45.141] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 22:36:14.433] [INFO] IOMeLogger - Server running...
+[2017-08-15 22:36:14.437] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 23:21:06.193] [INFO] IOMeLogger - Server running...
+[2017-08-15 23:21:06.210] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 23:22:10.404] [INFO] IOMeLogger - Server running...
+[2017-08-15 23:22:10.425] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-15 23:22:53.754] [INFO] IOMeLogger - Server running...
+[2017-08-15 23:22:53.768] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 10:45:27.301] [INFO] IOMeLogger - Server running...
+[2017-08-16 10:45:27.305] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 10:45:56.136] [INFO] IOMeLogger - Server running...
+[2017-08-16 10:45:56.140] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 10:46:27.215] [INFO] IOMeLogger - Server running...
+[2017-08-16 10:46:27.220] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 10:48:30.981] [INFO] IOMeLogger - Server running...
+[2017-08-16 10:48:30.986] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 10:49:19.956] [INFO] IOMeLogger - Server running...
+[2017-08-16 10:49:19.960] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 11:53:06.664] [INFO] IOMeLogger - Server running...
+[2017-08-16 11:53:06.683] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 11:53:11.502] [INFO] IOMeLogger - /userID 7 posture 1 time 249009
+[2017-08-16 11:53:21.894] [INFO] IOMeLogger - /userID 7 posture 1 time 249009
+[2017-08-16 11:53:28.009] [INFO] IOMeLogger - /userID 7 posture 1 time 249009
+[2017-08-16 11:53:29.751] [INFO] IOMeLogger - /userID 7 posture 1 time 249009
+[2017-08-16 13:42:11.780] [INFO] IOMeLogger - Server running...
+[2017-08-16 13:42:11.784] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 13:51:03.556] [INFO] IOMeLogger - Server running...
+[2017-08-16 13:51:03.560] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-16 14:07:45.713] [INFO] IOMeLogger - Server running...
+[2017-08-16 14:07:45.717] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-30 13:59:47.269] [INFO] IOMeLogger - Server running...
+[2017-08-30 13:59:47.284] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-30 14:05:04.238] [INFO] IOMeLogger - Server running...
+[2017-08-30 14:05:04.252] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-30 14:06:33.062] [INFO] IOMeLogger - Server running...
+[2017-08-30 14:06:33.077] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-30 14:07:00.914] [INFO] IOMeLogger - Server running...
+[2017-08-30 14:07:00.929] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-30 14:08:01.693] [INFO] IOMeLogger - Server running...
+[2017-08-30 14:08:01.710] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-08-30 14:08:31.299] [INFO] IOMeLogger - Server running...
+[2017-08-30 14:08:31.313] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 14:45:29.517] [INFO] IOMeLogger - Server running...
+[2017-09-02 14:45:29.537] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 14:48:02.494] [INFO] IOMeLogger - Server running...
+[2017-09-02 14:48:02.510] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:01:26.594] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:01:26.611] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:03:45.928] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:03:45.943] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:09:55.087] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:09:55.101] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:12:28.893] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:12:28.907] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:20:44.816] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:20:44.831] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:22:20.151] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:22:20.168] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:25:28.163] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:25:28.178] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-02 18:26:33.622] [INFO] IOMeLogger - Server running...
+[2017-09-02 18:26:33.640] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 14:50:15.273] [INFO] IOMeLogger - Server running...
+[2017-09-04 14:50:15.288] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 14:51:03.574] [INFO] IOMeLogger - Server running...
+[2017-09-04 14:51:03.596] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 14:53:24.415] [INFO] IOMeLogger - Server running...
+[2017-09-04 14:53:24.431] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:03:50.882] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:03:50.899] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:04:42.736] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:04:42.754] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:06:05.146] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:06:05.160] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:06:39.886] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:06:39.903] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:07:34.862] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:07:34.875] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:08:26.441] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:08:26.459] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:09:06.805] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:09:06.821] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:10:30.802] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:10:30.818] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:12:41.293] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:12:41.307] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:22:32.288] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:22:32.303] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 15:45:02.006] [INFO] IOMeLogger - Server running...
+[2017-09-04 15:45:02.037] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 16:10:33.963] [INFO] IOMeLogger - Server running...
+[2017-09-04 16:10:33.980] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 16:12:43.845] [INFO] IOMeLogger - Server running...
+[2017-09-04 16:12:43.859] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 16:13:56.667] [INFO] IOMeLogger - Server running...
+[2017-09-04 16:13:56.682] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 16:17:21.003] [INFO] IOMeLogger - Server running...
+[2017-09-04 16:17:21.018] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-04 16:18:50.672] [INFO] IOMeLogger - Server running...
+[2017-09-04 16:18:50.687] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
+[2017-09-07 00:04:30.677] [INFO] IOMeLogger - Server running...
+[2017-09-07 00:04:30.693] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }

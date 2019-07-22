@@ -1,0 +1,17 @@
+[2017-11-22 13:46:50.134] [INFO] IOMeLogger - Server running...
+[2017-11-22 13:46:50.246] [INFO] IOMeLogger - { name: 'internerofme',
+  version: '1.0.0',
+  description: 'internetofme project',
+  main: 'server.js',
+  database: 
+   { mongodbURL: 'mongodb://localhost:27017/',
+     databaseName: 'smart_chair',
+     collectionName: 'sensor_readings' },
+  API: { url: 'http://localhost:8099/', api: 'transactions' },
+  log4js: 
+   { loadAppenderType: 'file',
+     path: 'logs/internetofmeLogs.log',
+     loggerName: 'IOMeLogger',
+     level: 'debug' },
+  host: { name: 'http://BLRKEC149183L:20223' },
+  author: { intern: 'Nipoon Patel' } }
